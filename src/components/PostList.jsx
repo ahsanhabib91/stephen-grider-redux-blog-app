@@ -27,13 +27,14 @@ class PostList extends Component {
   }
 
   render() {
-    console.log("this.props:", this.props.posts);
+    // console.log("[PostList] render()");
+    // console.log("this.props:", this.props.posts);
     return <div className="ui relaxed divided list">{this.renderList()}</div>;
   }
 }
 
 const mapStateToProps = state => {
-  // console.log("state:", state);
+  //   console.log("state:", state);
   return { posts: state.posts };
 };
 
